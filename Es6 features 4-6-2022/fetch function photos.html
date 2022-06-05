@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2> Javascript Arrow function</h2>
+		
+	<input type="button" value="Fecth All Posts" onclick="allPosts()">
+		<div id="input">
+		
+		
+		</div>
+	
+        <script>
+		
+         	 
+			let  allPosts = () => {						 
+			 const URL = "https://jsonplaceholder.typicode.com/photos";
+					fetch(URL)
+					.then(response=> response.json())
+					.then(response=>{
+					console.log(response)
+					response.forEach(item => document.body.insertAdjacentHTML('beforeend', `<h1> Title - ${item.title}</h1><p> URL -  ${item.url}</p> <br>`))
+
+		
+			 
+					})
+			 }
+			
+		 
+        </script>
+    </body>
+</html>

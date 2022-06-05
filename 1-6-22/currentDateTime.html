@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2> Javascript Array</h2>
+		
+		<div id="todaysDate"></div>
+        <script>
+         
+function doDate()
+{
+
+		 var currentdate= new Date();
+		 var dateTime= "Time = "+ currentdate.getDate() + "/"
+                + (currentdate.getMonth()+1)  + "/" 
+                + currentdate.getFullYear() + " @ "  
+                + currentdate.getHours() + ":"  
+                + currentdate.getMinutes() + ":" 
+                + currentdate.getSeconds();
+				
+				 document.getElementById("todaysDate").innerHTML = dateTime;
+}
+		setInterval(doDate, 1000);		
+				
+		 
+        </script>
+    </body>
+</html>

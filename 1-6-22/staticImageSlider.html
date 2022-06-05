@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2> Javascript Array</h2>
+		
+		<img id="image" src="" width="500" height="600">
+        <script>
+         
+var arr=["https://i.picsum.photos/id/0/5616/3744.jpg?hmac=3GAAioiQziMGEtLbfrdbcoenXoWAW-zlyEAMkfEdBzQ","https://i.picsum.photos/id/10/2500/1667.jpg?hmac=J04WWC_ebchx3WwzbM-Z4_KC_LeLBWr5LZMaAkWkF68","https://i.picsum.photos/id/1001/5616/3744.jpg?hmac=38lkvX7tHXmlNbI0HzZbtkJ6_wpWyqvkX4Ty6vYElZE"];
+
+function imageSlider(){
+
+for(i=0;i<arr.length;i++){
+
+document.getElementById("image").src= arr[i];
+console.log(arr[i]);
+
+} 
+
+}
+
+setInterval(imageSlider,3000);
+
+        </script>
+    </body>
+</html>
